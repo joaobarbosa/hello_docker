@@ -7,7 +7,6 @@ ADD supervisord.conf /etc/supervisor/conf.d/my_app.conf
 
 WORKDIR /my_app
 
-RUN pip install supervisor gunicorn
 RUN pip install -r requirements.txt
 
 RUN mkdir logs
